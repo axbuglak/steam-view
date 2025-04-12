@@ -1,0 +1,26 @@
+{
+  "name": "steam-view",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint . && prettier -c \"**/*.js\"",
+    "fmt": "prettier --write \"**/*.js\"",
+    "test": "npm run lint && node --test"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "undici": "^7.8.0",
+    "xlsx": "^0.18.5"
+  },
+  "engines": {
+    "node": "22"
+  },
+  "devDependencies": {
+    "eslint": "^9.20.1",
+    "eslint-config-metarhia": "^9.1.1",
+    "prettier": "^3.4.2"
+  }
+}
