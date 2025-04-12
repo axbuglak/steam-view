@@ -4,6 +4,7 @@ const { readXlsx, Proxies } = require('./lib/common');
 const itemsIds = require('./static/NameID.json');
 const SteamItem = require('./lib/steamItem');
 const path = require('path');
+const console = require('./lib/logger.js');
 
 const itemsPath = path.join(process.cwd(), 'static/items.xlsx');
 const proxyPathOne = path.join(process.cwd(), 'static/accounts_stage1.xlsx');
@@ -24,6 +25,7 @@ for (const item of items) {
     id,
     proxiesOne,
     proxiesTwo,
+    console,
   });
   steamItem.stepOne();
 }
