@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "jsdom": "^26.1.0",
     "undici": "^7.8.0",
     "xlsx": "^0.18.5"
   },
