@@ -29,7 +29,7 @@ for (const item of items) {
     (item) => item.market_hash_name === name,
   ).commodityID;
   const getAccount = () => accounts.getAccount();
-  new SteamItem({
+  const steamItem = new SteamItem({
     name,
     float,
     price,
@@ -41,4 +41,5 @@ for (const item of items) {
     getAccount,
     sendTgMessage: async (m) => await bot.sendMessage(m),
   });
+  steamItem.stepOne();
 }
