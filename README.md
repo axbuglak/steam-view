@@ -15,7 +15,7 @@
     # Verify npm version:
     npm -v # Should print "10.9.2". 
   ```
-- `https://github.com/axbuglak/steam-view.git`
+- `git clone https://github.com/axbuglak/steam-view.git`
 - `cd steam-view`
 - `npm i`
 - Fill in the .env file as in .env.example
