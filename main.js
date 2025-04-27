@@ -25,7 +25,7 @@ const accountsBuy = readXlsx(accountsBuyPath);
 const accounts = new AccountsManages({
   accountsCookies: accountsBuy,
   delay: 5, // delay in s
-  critBalance: 50, // critical balance point
+  critBalance: 22, // critical balance point
 });
 for (const item of items) {
   const { Name: name, Float: float, Price: price, Sleep: sleep } = item;
