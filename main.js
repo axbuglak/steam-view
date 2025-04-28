@@ -36,7 +36,7 @@ const bot = new TelegramBot(BOT_TOKEN, USER_ID);
     const id = itemsIds.find(
       (item) => item.market_hash_name === name,
     ).commodityID;
-    const getAccount = () => accounts.getAccount();
+    const getAccount = (price) => accounts.getAccount(price);
     const steamItem = new SteamItem({
       name,
       float,
